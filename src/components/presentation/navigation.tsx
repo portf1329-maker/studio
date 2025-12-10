@@ -43,7 +43,7 @@ export function Navigation() {
       </span>
       <Button
         onClick={handleNext}
-        disabled={currentSlide === totalSlides - 1}
+        disabled={currentSlide === totalSlides}
         aria-label="Next Slide"
         asChild
       >

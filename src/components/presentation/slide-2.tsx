@@ -16,7 +16,7 @@ From personalized gifts to thoughtful keepsakes, every product is crafted to mak
           </p>
         </div>
         <div className="relative rounded-lg overflow-hidden">
-          <Image src="/slide2.png" alt="Brand story" fill style={{ objectFit: 'contain' }} data-ai-hint="abstract journey" />
+          <Image src="/brand.png" alt="Brand story" fill style={{ objectFit: 'contain' }} data-ai-hint="abstract journey" />
         </div>
       </div>
     </div>
