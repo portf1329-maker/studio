@@ -1,3 +1,64 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "team-member-1",
+      "description": "First team member portrait",
+      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjUzNDA5MTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "team-member-2",
+      "description": "Second team member portrait",
+      "imageUrl": "https://images.unsplash.com/photo-1531123414780-f74242c2b052?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGVyc29uJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzY1MzQwOTE4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "team-member-3",
+      "description": "Third team member portrait",
+      "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjUzNDA5MTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "brand-story",
+      "description": "Evocative image for brand storytelling",
+      "imageUrl": "https://images.unsplash.com/photo-1761857352325-9fce31cb96de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhYnN0cmFjdCUyMGpvdXJuZXl8ZW58MHx8fHwxNzY1MzE2MDE1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract journey"
+    },
+    {
+      "id": "content-marketing-1",
+      "description": "Image representing blog content",
+      "imageUrl": "https://images.unsplash.com/photo-1485498128961-422168ba5f87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3cml0aW5nJTIwZGVza3xlbnwwfHx8fDE3NjUyNzIxNjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "writing desk"
+    },
+    {
+      "id": "content-marketing-2",
+      "description": "Image representing video content",
+      "imageUrl": "https://images.unsplash.com/photo-1493804714600-6edb1cd93080?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dmlkZW8lMjBjYW1lcmF8ZW58MHx8fHwxNzY1MzkwNzQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "video camera"
+    },
+    {
+      "id": "smo-1",
+      "description": "Image representing social media engagement",
+      "imageUrl": "https://images.unsplash.com/photo-1511376979163-f804dff7ad7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwZW9wbGUlMjB0YWxraW5nfGVufDB8fHx8MTc2NTM3ODkzMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "people talking"
+    },
+    {
+      "id": "smo-2",
+      "description": "Image representing social media network",
+      "imageUrl": "https://images.unsplash.com/photo-1683721003111-070bcc053d8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzb2NpYWwlMjBuZXR3b3JrfGVufDB8fHx8MTc2NTM5MDc0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "social network"
+    },
+    {
+      "id": "meta-ads",
+      "description": "Image representing Meta ads analytics",
+      "imageUrl": "https://images.unsplash.com/photo-1691643158804-d3f02eb456a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkYXRhJTIwY2hhcnR8ZW58MHx8fHwxNzY1Mjg0MjYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "data chart"
+    },
+    {
+      "id": "thank-you",
+      "description": "A closing image for the thank you slide",
+      "imageUrl": "https://images.unsplash.com/photo-1744843806143-42f4599e29fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmcmllbmRseSUyMGhhbmRzaGFrZXxlbnwwfHx8fDE3NjUzOTA3NDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "friendly handshake"
+    }
+  ]
 }
