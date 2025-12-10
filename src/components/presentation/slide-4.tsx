@@ -9,10 +9,10 @@ export function Slide4() {
       <div className="grid grid-cols-1 md:grid-cols-5 gap-6 flex-grow">
         <div className="md:col-span-3 flex flex-col gap-4">
           <div className="relative w-full h-48 rounded-lg overflow-hidden">
-            <Image src="/slide4-1.png" alt="Social media engagement" fill style={{ objectFit: 'cover' }} data-ai-hint="people talking" />
+            <Image src="/slide4-1.png" alt="Social media engagement" fill style={{ objectFit: 'contain' }} data-ai-hint="people talking" />
           </div>
           <div className="relative w-full h-48 rounded-lg overflow-hidden">
-            <Image src="/slide4-2.png" alt="Social media network" fill style={{ objectFit: 'cover' }} data-ai-hint="social network" />
+            <Image src="/slide4-2.png" alt="Social media network" fill style={{ objectFit: 'contain' }} data-ai-hint="social network" />
           </div>
         </div>
         <div className="md:col-span-2 flex flex-col justify-center">
