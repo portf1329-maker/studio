@@ -22,7 +22,7 @@ export function Slide1() {
       <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-4xl">
         {teamMembers.map((member) => (
             <div key={member.name} className="flex flex-col items-center">
-              <Avatar className="w-24 h-24 border-4 border-accent" onClick={() => openImage(member.image)}>
+              <Avatar className="w-24 h-24 border-4 border-primary cursor-pointer" onClick={() => openImage(member.image)}>
                 <AvatarImage src={member.image} alt={member.name} data-ai-hint={member.hint} />
                 <AvatarFallback>{member.name.substring(0, 2)}</AvatarFallback>
               </Avatar>
