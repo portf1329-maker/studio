@@ -21,8 +21,8 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased">
         <FullScreenImageProvider>
-          <div className="flex flex-col items-center justify-center min-h-screen p-4 overflow-hidden">
-            <header className="w-full max-w-5xl mb-4 flex justify-between items-center">
+          <div className="flex flex-col items-center justify-center min-h-screen p-2 md:p-4">
+            <header className="w-full max-w-5xl mb-4 flex justify-between items-center px-2">
               <a href="/slide/1">
                 <h1 className="text-2xl font-headline font-bold text-primary animate-pulse">S.M.I.T</h1>
               </a>
@@ -32,7 +32,7 @@ export default function RootLayout({
               </div>
             </header>
             
-            <main className="relative w-full max-w-5xl aspect-video bg-card rounded-xl shadow-2xl overflow-hidden">
+            <main className="relative w-full max-w-5xl h-[60vh] md:h-auto md:aspect-video bg-card rounded-xl shadow-2xl overflow-hidden">
               {children}
             </main>
 
