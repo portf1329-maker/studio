@@ -1,26 +1,18 @@
 import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent } from '@/components/ui/card';
 import { Users, ThumbsUp, MessageSquare, Share2 } from 'lucide-react';
 
-function getImage(id: string) {
-    return PlaceHolderImages.find(img => img.id === id);
-}
-
 export function Slide4() {
-  const image1 = getImage('smo-1');
-  const image2 = getImage('smo-2');
-
   return (
     <div className="flex flex-col h-full">
       <h2 className="text-3xl font-bold font-headline text-primary mb-6">Social Media Optimization (SMO)</h2>
       <div className="grid grid-cols-1 md:grid-cols-5 gap-6 flex-grow">
         <div className="md:col-span-3 flex flex-col gap-4">
           <div className="relative w-full h-48 rounded-lg overflow-hidden">
-            {image1 && <Image src={image1.imageUrl} alt="Social media engagement" fill style={{ objectFit: 'cover' }} data-ai-hint={image1.imageHint} />}
+            <Image src="/images/smo-1.jpg" alt="Social media engagement" fill style={{ objectFit: 'cover' }} data-ai-hint="people talking" />
           </div>
           <div className="relative w-full h-48 rounded-lg overflow-hidden">
-            {image2 && <Image src={image2.imageUrl} alt="Social media network" fill style={{ objectFit: 'cover' }} data-ai-hint={image2.imageHint} />}
+            <Image src="/images/smo-2.jpg" alt="Social media network" fill style={{ objectFit: 'cover' }} data-ai-hint="social network" />
           </div>
         </div>
         <div className="md:col-span-2 flex flex-col justify-center">

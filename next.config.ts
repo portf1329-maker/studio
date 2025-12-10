@@ -30,6 +30,15 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/slide/1',
+        permanent: true,
+      },
+    ]
+  },
 };
 
 export default nextConfig;

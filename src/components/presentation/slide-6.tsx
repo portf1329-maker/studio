@@ -1,13 +1,6 @@
 import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-
-function getImage(id: string) {
-    return PlaceHolderImages.find(img => img.id === id);
-}
 
 export function Slide6() {
-  const image = getImage('thank-you');
-
   return (
     <div className="flex flex-col h-full">
       <h2 className="text-3xl font-bold font-headline text-primary mb-6">Summary & Thank You</h2>
@@ -25,7 +18,7 @@ export function Slide6() {
           </p>
         </div>
         <div className="relative rounded-lg overflow-hidden">
-          {image && <Image src={image.imageUrl} alt="Thank you" fill style={{ objectFit: 'cover' }} data-ai-hint={image.imageHint} />}
+          <Image src="/images/thank-you.jpg" alt="Thank you" fill style={{ objectFit: 'cover' }} data-ai-hint="friendly handshake" />
         </div>
       </div>
     </div>

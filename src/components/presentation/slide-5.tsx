@@ -1,20 +1,13 @@
 import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { BarChart, Target, DollarSign, MousePointerClick } from 'lucide-react';
 
-function getImage(id: string) {
-    return PlaceHolderImages.find(img => img.id === id);
-}
-
 export function Slide5() {
-  const image = getImage('meta-ads');
-
   return (
     <div className="flex flex-col h-full">
       <h2 className="text-3xl font-bold font-headline text-primary mb-6">Meta Ads Strategy</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 flex-grow">
         <div className="relative rounded-lg overflow-hidden">
-          {image && <Image src={image.imageUrl} alt="Meta ads analytics" fill style={{ objectFit: 'cover' }} data-ai-hint={image.imageHint} />}
+          <Image src="/images/meta-ads.jpg" alt="Meta ads analytics" fill style={{ objectFit: 'cover' }} data-ai-hint="data chart" />
         </div>
         <div className="flex flex-col justify-center">
           <p className="text-lg mb-6">
