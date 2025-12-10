@@ -16,6 +16,7 @@ export function Slide1() {
 
   return (
     <div className="flex flex-col items-center justify-center h-full text-center">
+      <h2 className="text-2xl font-serif text-muted-foreground mb-8 animate-in fade-in duration-500">بسم الله الرحمن الرحيم</h2>
       <h1 className="text-5xl font-bold font-headline text-primary animate-in fade-in zoom-in-95 duration-500">Digital Marketing Strategy</h1>
       <p className="mt-4 text-xl text-muted-foreground animate-in fade-in zoom-in-95 duration-500 delay-200">Presented by The Innovators</p>
       
