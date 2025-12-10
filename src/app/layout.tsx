@@ -24,7 +24,7 @@ export default function RootLayout({
           <div className="flex flex-col items-center justify-center min-h-screen p-4 overflow-hidden">
             <header className="w-full max-w-5xl mb-4 flex justify-between items-center">
               <a href="/slide/1">
-                <h1 className="text-2xl font-headline font-bold text-primary">SlideShowPro</h1>
+                <h1 className="text-2xl font-headline font-bold text-primary">S.M.I.T</h1>
               </a>
                <div className="text-right text-sm text-muted-foreground">
                 <p>0332-3522790</p>
