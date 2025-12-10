@@ -8,7 +8,7 @@ export function Slide6() {
   const imageUrl = "/slide6.png";
 
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col h-full animate-in fade-in slide-in-from-bottom-4 duration-500">
       <h2 className="text-3xl font-bold font-headline text-primary mb-6">Summary & Thank You</h2>
       <div className="flex-grow grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="flex flex-col justify-center">

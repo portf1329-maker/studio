@@ -1,13 +1,10 @@
+'use client';
+
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { Navigation } from '@/components/presentation/navigation';
 import { FullScreenImageProvider } from '@/context/FullScreenImageContext';
-
-export const metadata: Metadata = {
-  title: 'SlideShowPro',
-  description: 'An interactive presentation website for a digital marketing course project.',
-};
 
 export default function RootLayout({
   children,
@@ -25,10 +22,14 @@ export default function RootLayout({
       <body className="font-body antialiased">
         <FullScreenImageProvider>
           <div className="flex flex-col items-center justify-center min-h-screen p-4 overflow-hidden">
-            <header className="w-full max-w-5xl mb-4">
+            <header className="w-full max-w-5xl mb-4 flex justify-between items-center">
               <a href="/slide/1">
                 <h1 className="text-2xl font-headline font-bold text-primary">SlideShowPro</h1>
               </a>
+               <div className="text-right text-sm text-muted-foreground">
+                <p>0332-3522790</p>
+                <p>www.chamantraders.store</p>
+              </div>
             </header>
             
             <main className="relative w-full max-w-5xl aspect-video bg-card rounded-xl shadow-2xl overflow-hidden">

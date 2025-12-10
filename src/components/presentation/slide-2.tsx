@@ -8,7 +8,7 @@ export function Slide2() {
   const imageUrl = "/brand.png";
 
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col h-full animate-in fade-in slide-in-from-bottom-4 duration-500">
       <h2 className="text-3xl font-bold font-headline text-primary mb-6">Brand Storytelling</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 flex-grow">
         <div className="flex flex-col justify-center">
