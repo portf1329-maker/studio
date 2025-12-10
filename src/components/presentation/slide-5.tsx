@@ -9,13 +9,13 @@ export function Slide5() {
   const imageUrl = "/meta.png";
 
   return (
-    <div className="flex flex-col h-full animate-in fade-in slide-in-from-bottom-4 duration-500">
-      <h2 className="text-3xl font-bold font-headline text-primary mb-6">Meta Ads Strategy</h2>
+    <div className="flex flex-col h-full">
+      <h2 className="text-3xl font-bold font-headline text-primary mb-6 animate-in fade-in slide-in-from-top-4 duration-500">Meta Ads Strategy</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 flex-grow">
-        <div className="relative rounded-lg overflow-hidden cursor-pointer" onClick={() => openImage(imageUrl)}>
-          <Image src={imageUrl} alt="Meta ads analytics" fill style={{ objectFit: 'contain' }} data-ai-hint="data chart" />
+        <div className="relative rounded-lg overflow-hidden cursor-pointer animate-in fade-in slide-in-from-left-8 duration-500 delay-200" onClick={() => openImage(imageUrl)}>
+          <Image src={imageUrl} alt="Meta ads analytics" fill style={{ objectFit: 'contain' }} data-ai-hint="data chart" className="transition-transform hover:scale-105"/>
         </div>
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center animate-in fade-in slide-in-from-right-8 duration-500 delay-300">
           <p className="text-lg mb-6">
             We leverage Meta's powerful advertising platform to run targeted campaigns that drive conversions and achieve a high return on investment.
           </p>
