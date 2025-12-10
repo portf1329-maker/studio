@@ -1,6 +1,12 @@
+'use client';
+
 import Image from 'next/image';
+import { useFullScreenImage } from '@/context/FullScreenImageContext';
 
 export function Slide6() {
+  const { openImage } = useFullScreenImage();
+  const imageUrl = "/slide6.png";
+
   return (
     <div className="flex flex-col h-full">
       <h2 className="text-3xl font-bold font-headline text-primary mb-6">Summary & Thank You</h2>
@@ -17,8 +23,8 @@ export function Slide6() {
             Thank you for your attention!
           </p>
         </div>
-        <div className="relative rounded-lg overflow-hidden">
-          <Image src="/slide6.png" alt="Thank you" fill style={{ objectFit: 'contain' }} data-ai-hint="friendly handshake" />
+        <div className="relative rounded-lg overflow-hidden cursor-pointer" onClick={() => openImage(imageUrl)}>
+          <Image src={imageUrl} alt="Thank you" fill style={{ objectFit: 'contain' }} data-ai-hint="friendly handshake" />
         </div>
       </div>
     </div>

@@ -1,13 +1,19 @@
+'use client';
+
 import Image from 'next/image';
 import { BarChart, Target, DollarSign, MousePointerClick } from 'lucide-react';
+import { useFullScreenImage } from '@/context/FullScreenImageContext';
 
 export function Slide5() {
+  const { openImage } = useFullScreenImage();
+  const imageUrl = "/slide5.png";
+
   return (
     <div className="flex flex-col h-full">
       <h2 className="text-3xl font-bold font-headline text-primary mb-6">Meta Ads Strategy</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 flex-grow">
-        <div className="relative rounded-lg overflow-hidden">
-          <Image src="/slide5.png" alt="Meta ads analytics" fill style={{ objectFit: 'contain' }} data-ai-hint="data chart" />
+        <div className="relative rounded-lg overflow-hidden cursor-pointer" onClick={() => openImage(imageUrl)}>
+          <Image src={imageUrl} alt="Meta ads analytics" fill style={{ objectFit: 'contain' }} data-ai-hint="data chart" />
         </div>
         <div className="flex flex-col justify-center">
           <p className="text-lg mb-6">

@@ -1,17 +1,22 @@
+'use client';
+
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { Users, ThumbsUp, MessageSquare, Share2 } from 'lucide-react';
+import { useFullScreenImage } from '@/context/FullScreenImageContext';
 
 export function Slide4() {
+  const { openImage } = useFullScreenImage();
+
   return (
     <div className="flex flex-col h-full">
       <h2 className="text-3xl font-bold font-headline text-primary mb-6">Social Media Optimization (SMO)</h2>
       <div className="grid grid-cols-1 md:grid-cols-5 gap-6 flex-grow">
         <div className="md:col-span-3 flex flex-col gap-4">
-          <div className="relative w-full h-48 rounded-lg overflow-hidden">
+          <div className="relative w-full h-48 rounded-lg overflow-hidden cursor-pointer" onClick={() => openImage('/slide4-1.png')}>
             <Image src="/slide4-1.png" alt="Social media engagement" fill style={{ objectFit: 'contain' }} data-ai-hint="people talking" />
           </div>
-          <div className="relative w-full h-48 rounded-lg overflow-hidden">
+          <div className="relative w-full h-48 rounded-lg overflow-hidden cursor-pointer" onClick={() => openImage('/slide4-2.png')}>
             <Image src="/slide4-2.png" alt="Social media network" fill style={{ objectFit: 'contain' }} data-ai-hint="social network" />
           </div>
         </div>

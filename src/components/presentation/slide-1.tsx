@@ -1,6 +1,9 @@
+'use client';
+
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { useFullScreenImage } from '@/context/FullScreenImageContext';
 
 const teamMembers = [
   { name: 'Tayyaba Rehman', role: 'Project Lead', image: '/taiba.png', hint: 'person portrait' },
@@ -9,6 +12,8 @@ const teamMembers = [
 ];
 
 export function Slide1() {
+  const { openImage } = useFullScreenImage();
+
   return (
     <div className="flex flex-col items-center justify-center h-full text-center">
       <h1 className="text-5xl font-bold font-headline text-primary">Digital Marketing Strategy</h1>
@@ -17,7 +22,7 @@ export function Slide1() {
       <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-4xl">
         {teamMembers.map((member) => (
             <div key={member.name} className="flex flex-col items-center">
-              <Avatar className="w-24 h-24 border-4 border-accent">
+              <Avatar className="w-24 h-24 border-4 border-accent" onClick={() => openImage(member.image)}>
                 <AvatarImage src={member.image} alt={member.name} data-ai-hint={member.hint} />
                 <AvatarFallback>{member.name.substring(0, 2)}</AvatarFallback>
               </Avatar>

@@ -1,6 +1,12 @@
+'use client';
+
 import Image from 'next/image';
+import { useFullScreenImage } from '@/context/FullScreenImageContext';
 
 export function Slide2() {
+  const { openImage } = useFullScreenImage();
+  const imageUrl = "/brand.png";
+
   return (
     <div className="flex flex-col h-full">
       <h2 className="text-3xl font-bold font-headline text-primary mb-6">Brand Storytelling</h2>
@@ -15,8 +21,8 @@ From personalized gifts to thoughtful keepsakes, every product is crafted to mak
           Chaman is more than a brand  it is a garden of emotions, where every item blooms with meaning, making every customer feel valued and connected.
           </p>
         </div>
-        <div className="relative rounded-lg overflow-hidden">
-          <Image src="/brand.png" alt="Brand story" fill style={{ objectFit: 'contain' }} data-ai-hint="abstract journey" />
+        <div className="relative rounded-lg overflow-hidden cursor-pointer" onClick={() => openImage(imageUrl)}>
+          <Image src={imageUrl} alt="Brand story" fill style={{ objectFit: 'contain' }} data-ai-hint="abstract journey" />
         </div>
       </div>
     </div>
