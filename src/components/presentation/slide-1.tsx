@@ -3,9 +3,9 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 const teamMembers = [
-  { name: 'Alex Johnson', role: 'Project Lead', image: '/images/team-member-1.jpg', hint: 'person portrait' },
-  { name: 'Maria Garcia', role: 'Marketing Strategist', image: '/images/team-member-2.jpg', hint: 'person portrait' },
-  { name: 'Samira Khan', role: 'Content Creator', image: '/images/team-member-3.jpg', hint: 'person portrait' },
+  { name: 'Alex Johnson', role: 'Project Lead', image: '/slide1-1.png', hint: 'person portrait' },
+  { name: 'Maria Garcia', role: 'Marketing Strategist', image: '/slide1-2.png', hint: 'person portrait' },
+  { name: 'Samira Khan', role: 'Content Creator', image: '/slide1-3.png', hint: 'person portrait' },
 ];
 
 export function Slide1() {

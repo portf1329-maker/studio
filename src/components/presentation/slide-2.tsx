@@ -14,7 +14,7 @@ export function Slide2() {
           </p>
         </div>
         <div className="relative rounded-lg overflow-hidden">
-          <Image src="/images/brand-story.jpg" alt="Brand story" fill style={{ objectFit: 'cover' }} data-ai-hint="abstract journey" />
+          <Image src="/slide2.png" alt="Brand story" fill style={{ objectFit: 'cover' }} data-ai-hint="abstract journey" />
         </div>
       </div>
     </div>

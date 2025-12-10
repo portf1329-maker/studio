@@ -7,7 +7,7 @@ export function Slide5() {
       <h2 className="text-3xl font-bold font-headline text-primary mb-6">Meta Ads Strategy</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 flex-grow">
         <div className="relative rounded-lg overflow-hidden">
-          <Image src="/images/meta-ads.jpg" alt="Meta ads analytics" fill style={{ objectFit: 'cover' }} data-ai-hint="data chart" />
+          <Image src="/slide5.png" alt="Meta ads analytics" fill style={{ objectFit: 'cover' }} data-ai-hint="data chart" />
         </div>
         <div className="flex flex-col justify-center">
           <p className="text-lg mb-6">

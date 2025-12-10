@@ -18,7 +18,7 @@ export function Slide6() {
           </p>
         </div>
         <div className="relative rounded-lg overflow-hidden">
-          <Image src="/images/thank-you.jpg" alt="Thank you" fill style={{ objectFit: 'cover' }} data-ai-hint="friendly handshake" />
+          <Image src="/slide6.png" alt="Thank you" fill style={{ objectFit: 'cover' }} data-ai-hint="friendly handshake" />
         </div>
       </div>
     </div>
